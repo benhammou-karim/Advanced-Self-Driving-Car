@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="411dp"
+        android:layout_height="287dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <Button
+        android:id="@+id/shutdown"
+        android:layout_width="128dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FE5C36"
+        android:text="shutdown"
+        app:layout_constraintEnd_toStartOf="@+id/Stop"
+        app:layout_constraintTop_toBottomOf="@+id/webView" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="292dp"
+        android:backgroundTint="#FE5C36"
+        android:text="Start"
+        app:layout_constraintEnd_toStartOf="@+id/shutdown"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Forward"
+        android:layout_width="122dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FE5C36"
+        android:text="Forward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shutdown" />
+
+    <Button
+        android:id="@+id/Left"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="#FE5C36"
+        android:text="Left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Start" />
+
+    <Button
+        android:id="@+id/Right"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FE5C36"
+        android:text="Right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toEndOf="@+id/Left"
+        app:layout_constraintTop_toBottomOf="@+id/Stop" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FE5C36"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Backward"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#FE5C36"
+        android:text="Backward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Forward" />
+
+    <Button
+        android:id="@+id/slowdown"
+        android:layout_width="128dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#FE5C36"
+        android:text="slowdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/speedUp"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Left"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/speedUp"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FE5C36"
+        android:text="speedUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/medium"
+        app:layout_constraintTop_toBottomOf="@+id/Backward"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FE5C36"
+        android:text="medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Right"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
